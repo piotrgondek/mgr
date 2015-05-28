@@ -3,7 +3,9 @@
 
     Backbone.Components.product.AlsoBoughtItems = Backbone.Marionette.CollectionView.extend({
 
-        el: '#alsoBoughtItems',
+        tagName: 'ul',
+
+        className: 'also-bought-items',
 
         childView: Backbone.Components.product.AlsoBoughtItem
     });

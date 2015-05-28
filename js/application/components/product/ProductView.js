@@ -18,13 +18,15 @@
         },
 
         onShow: function () {
-            var c = new Backbone.Collection([
-                {a: 1}, {a: 2}, {a: 3}
-            ]);
+            var c = new Backbone.Collection();
 
             this.alsoBought.show(new Backbone.Components.product.AlsoBoughtItems({
                 collection: c
             }));
+
+            c.fetch({
+                url: 'data/alsoBought.json'
+            });
         }
     });
 })(Backbone);

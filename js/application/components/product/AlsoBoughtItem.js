@@ -5,6 +5,6 @@
 
         tagName: 'li',
 
-        template: _.template('<span>ok</span>')
+        template: _.template('<span><%= a %></span>')
     });
 })(Backbone);
