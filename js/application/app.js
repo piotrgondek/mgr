@@ -11,7 +11,7 @@
 
         Backbone.history.start({
             pushState: true,
-            root: '~piotrgondek/app1'
+            root: '~piotrgondek/mgr'
         });
 
         console.log('App started');
