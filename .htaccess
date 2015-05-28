@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteBase /~piotrgondek/mgr
+
+RewriteRule ^js/(.*)$ jsDispatcher.php?file=js/$1
+RewriteRule ^css/(.*)$ cssDispatcher.php?file=css/$1

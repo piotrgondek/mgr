@@ -1,0 +1,45 @@
+.product {
+  @include span-columns(12);
+
+  .img-container {
+    @include span-columns(4 of 12);
+
+    .img-thumbnail {
+      @include span-columns(1 of 4);
+
+      a {
+        @include span-columns(1 of 1);
+      }
+    }
+
+    .full-img {
+      @include span-columns(3 of 4);
+    }
+  }
+
+  .product-description {
+    @include span-columns(6 of 12);
+
+    .price {
+      @include span-columns(6 of 6);
+    }
+
+    .availability {
+      @include span-columns(6 of 6);
+    }
+
+    .features {
+      @include span-columns(6 of 6);
+      @extend %default-ul;
+    }
+  }
+
+  .action-buttons {
+    @include span-columns(2 of 12);
+    @include omega();
+  }
+
+  .additional-info {
+    @include span-columns(12 of 12);
+  }
+}

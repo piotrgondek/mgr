@@ -1,0 +1,31 @@
+.header {
+
+  .logo {
+    @include span-columns(2 of 12);
+    background: {
+      image: url('http://www.themarysue.com/wp-content/uploads/2014/06/twitter-a.png');
+      repeat: no-repeat;
+      position: center;
+      size: auto 200px;
+    }
+    height: 200px;
+    @include filter(blur(10px));
+  }
+
+  .search {
+    @include span-columns(10 of 12);
+    @include omega();
+    height: 100px;
+  }
+
+  .important-links {
+    @include span-columns(7 of 12);
+    height: 100px;
+  }
+
+  .trolley {
+    @include span-columns(3 of 12);
+    @include omega();
+    height: 100px;
+  }
+}
