@@ -3,9 +3,6 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script type="text/javascript" src="js/basic.min.js"></script>
-    <script type="text/javascript" src="js/app.min.js"></script>
-    <script type="text/javascript" src="js/components.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -23,25 +20,25 @@
                 <div class="img-container">
                     <div class="img-thumbnail">
                         <a href="#">
-                            <img src="img/sigma01.jpg"/>
+                            <img src="img/product/sigma01.jpg"/>
                         </a>
                         <a href="#">
-                            <img src="img/sigma02.jpg"/>
+                            <img src="img/product/sigma02.jpg"/>
                         </a>
                         <a href="#">
-                            <img src="img/sigma03.jpg"/>
+                            <img src="img/product/sigma03.jpg"/>
                         </a>
                         <a href="#">
-                            <img src="img/sigma04.jpg"/>
+                            <img src="img/product/sigma04.jpg"/>
                         </a>
                         <a href="#">
-                            <img src="img/sigma05.jpg"/>
+                            <img src="img/product/sigma05.jpg"/>
                         </a>
                         <a href="#">
-                            <img src="img/sigma06.jpg"/>
+                            <img src="img/product/sigma06.jpg"/>
                         </a>
                     </div>
-                    <img class="full-img" src="img/sigma01.jpg"/>
+                    <img class="full-img" src="img/product/sigma01.jpg"/>
                 </div>
                 <div class="product-description">
                     <h1>Sigma 210306 18-35mm F1.8 DC HSM Lens for Nikon APS-C DSLRs (Black)</h1>
@@ -63,11 +60,31 @@
                 </div>
                 <div class="action-buttons"></div>
                 <div class="additional-info">
-                    <div class="also-bought">
+                    <div class="also-bought-block">
                         <h3>Customers Who Bought This Item Also Bought</h3>
 
                         <div class="also-bought-wrapper">
                             <ul class="also-bought-items"></ul>
+                        </div>
+                    </div>
+                    <div class="reviews-block">
+                        <h3>Customer Reviews</h3>
+
+                        <div class="reviews-wrapper">
+                            <ul class="reviews"></ul>
+                        </div>
+
+                        <div class="new-review">
+                            <span class="add-review">Add new review</span>
+
+                            <form action="" method="post" class="review-form">
+                                <textarea name="" placeholder="Your review..."></textarea>
+                                <select name="">
+                                    <option value="true">I like this item</option>
+                                    <option value="false">I do not like this item</option>
+                                </select>
+                                <input type="submit"/>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -76,5 +93,14 @@
     </div>
     <div class="footer">footer</div>
 </div>
+
+<script id="alsoBoughtItemTmpl" type="text/html">
+    <img class="image" src="<%= img %>"/>
+    <h4 class="name"><%= product %></h4>
+    <span class="price"><%= price %></span>
+</script>
+<script type="text/javascript" src="js/basic.min.js"></script>
+<script type="text/javascript" src="js/app.min.js"></script>
+<script type="text/javascript" src="js/components.min.js"></script>
 </body>
 </html>

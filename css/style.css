@@ -320,18 +320,13 @@ picture {
     width: 48.82117%; }
     .product .product-description:last-child {
       margin-right: 0; }
-    .product .product-description .price {
-      float: left;
-      display: block;
-      margin-right: 4.82916%;
-      width: 100%; }
-      .product .product-description .price:last-child {
-        margin-right: 0; }
+    .product .product-description .price,
     .product .product-description .availability {
       float: left;
       display: block;
       margin-right: 4.82916%;
       width: 100%; }
+      .product .product-description .price:last-child,
       .product .product-description .availability:last-child {
         margin-right: 0; }
     .product .product-description .features {
@@ -356,5 +351,72 @@ picture {
     width: 100%; }
     .product .additional-info:last-child {
       margin-right: 0; }
+    .product .additional-info .also-bought-block {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .product .additional-info .also-bought-block:last-child {
+        margin-right: 0; }
+      .product .additional-info .also-bought-block .also-bought-wrapper {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .product .additional-info .also-bought-block .also-bought-wrapper:last-child {
+          margin-right: 0; }
+        .product .additional-info .also-bought-block .also-bought-wrapper .also-bought-items {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 91.4702%;
+          margin-left: 8.5298%; }
+          .product .additional-info .also-bought-block .also-bought-wrapper .also-bought-items:last-child {
+            margin-right: 0; }
+          .product .additional-info .also-bought-block .also-bought-wrapper .also-bought-items .also-bought-item {
+            float: left;
+            display: block;
+            margin-right: 2.57751%;
+            width: 16.07295%;
+            text-align: center; }
+            .product .additional-info .also-bought-block .also-bought-wrapper .also-bought-items .also-bought-item:last-child {
+              margin-right: 0; }
+            .product .additional-info .also-bought-block .also-bought-wrapper .also-bought-items .also-bought-item .name {
+              font-size: 0.75em; }
+    .product .additional-info .reviews-block {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .product .additional-info .reviews-block:last-child {
+        margin-right: 0; }
+      .product .additional-info .reviews-block .reviews-wrapper {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .product .additional-info .reviews-block .reviews-wrapper:last-child {
+          margin-right: 0; }
+      .product .additional-info .reviews-block .new-review {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .product .additional-info .reviews-block .new-review:last-child {
+          margin-right: 0; }
+        .product .additional-info .reviews-block .new-review .add-review {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .product .additional-info .reviews-block .new-review .add-review:last-child {
+            margin-right: 0; }
+        .product .additional-info .reviews-block .new-review .review-form {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 40.29137%; }
+          .product .additional-info .reviews-block .new-review .review-form:last-child {
+            margin-right: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,8 @@
 
         tagName: 'li',
 
-        template: _.template('<span><%= a %></span>')
+        className: 'also-bought-item',
+
+        template: '#alsoBoughtItemTmpl'
     });
 })(Backbone);

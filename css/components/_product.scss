@@ -20,10 +20,7 @@
   .product-description {
     @include span-columns(6 of 12);
 
-    .price {
-      @include span-columns(6 of 6);
-    }
-
+    .price,
     .availability {
       @include span-columns(6 of 6);
     }
@@ -41,5 +38,47 @@
 
   .additional-info {
     @include span-columns(12 of 12);
+
+    .also-bought-block {
+      @include span-columns(12 of 12);
+
+      .also-bought-wrapper {
+        @include span-columns(12 of 12);
+
+        .also-bought-items {
+          @include span-columns(11);
+          @include shift(1);
+
+          .also-bought-item {
+            @include span-columns(2 of 11);
+            text-align: center;
+
+            .name {
+              font-size: em(12px);
+            }
+          }
+        }
+      }
+    }
+
+    .reviews-block {
+      @include span-columns(12 of 12);
+
+      .reviews-wrapper {
+        @include span-columns(12 of 12);
+      }
+
+      .new-review {
+        @include span-columns(12 of 12);
+
+        .add-review {
+          @include span-columns(12 of 12);
+        }
+
+        .review-form {
+          @include span-columns(5 of 12);
+        }
+      }
+    }
   }
 }
