@@ -14,13 +14,14 @@
         },
 
         regions: {
-            alsoBought: '.also-bought-wrapper'
+            alsoBought: '.also-bought-region',
+            reviews: '.reviews-region'
         },
 
         onShow: function () {
             var c = new Backbone.Collection();
 
-            this.alsoBought.show(new Backbone.Components.product.AlsoBoughtItems({
+            this.alsoBought.show(new Backbone.Components.product.AlsoBoughtItemsView({
                 collection: c
             }));
 

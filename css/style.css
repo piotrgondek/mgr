@@ -358,65 +358,72 @@ picture {
       width: 100%; }
       .product .additional-info .also-bought-block:last-child {
         margin-right: 0; }
-      .product .additional-info .also-bought-block .also-bought-wrapper {
+      .product .additional-info .also-bought-block .also-bought-region {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%; }
-        .product .additional-info .also-bought-block .also-bought-wrapper:last-child {
+        .product .additional-info .also-bought-block .also-bought-region:last-child {
           margin-right: 0; }
-        .product .additional-info .also-bought-block .also-bought-wrapper .also-bought-items {
+        .product .additional-info .also-bought-block .also-bought-region .also-bought-items {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 91.4702%;
           margin-left: 8.5298%; }
-          .product .additional-info .also-bought-block .also-bought-wrapper .also-bought-items:last-child {
+          .product .additional-info .also-bought-block .also-bought-region .also-bought-items:last-child {
             margin-right: 0; }
-          .product .additional-info .also-bought-block .also-bought-wrapper .also-bought-items .also-bought-item {
+          .product .additional-info .also-bought-block .also-bought-region .also-bought-items .also-bought-item {
             float: left;
             display: block;
             margin-right: 2.57751%;
             width: 16.07295%;
             text-align: center; }
-            .product .additional-info .also-bought-block .also-bought-wrapper .also-bought-items .also-bought-item:last-child {
+            .product .additional-info .also-bought-block .also-bought-region .also-bought-items .also-bought-item:last-child {
               margin-right: 0; }
-            .product .additional-info .also-bought-block .also-bought-wrapper .also-bought-items .also-bought-item .name {
+            .product .additional-info .also-bought-block .also-bought-region .also-bought-items .also-bought-item .name {
               font-size: 0.75em; }
-    .product .additional-info .reviews-block {
+    .product .additional-info .reviews-region {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%; }
-      .product .additional-info .reviews-block:last-child {
+      .product .additional-info .reviews-region:last-child {
         margin-right: 0; }
-      .product .additional-info .reviews-block .reviews-wrapper {
+      .product .additional-info .reviews-region .reviews-block {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%; }
-        .product .additional-info .reviews-block .reviews-wrapper:last-child {
+        .product .additional-info .reviews-region .reviews-block:last-child {
           margin-right: 0; }
-      .product .additional-info .reviews-block .new-review {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        .product .additional-info .reviews-block .new-review:last-child {
-          margin-right: 0; }
-        .product .additional-info .reviews-block .new-review .add-review {
+        .product .additional-info .reviews-region .reviews-block .reviews-wrapper {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 100%; }
-          .product .additional-info .reviews-block .new-review .add-review:last-child {
+          .product .additional-info .reviews-region .reviews-block .reviews-wrapper:last-child {
             margin-right: 0; }
-        .product .additional-info .reviews-block .new-review .review-form {
+        .product .additional-info .reviews-region .reviews-block .new-review {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 40.29137%; }
-          .product .additional-info .reviews-block .new-review .review-form:last-child {
+          width: 100%; }
+          .product .additional-info .reviews-region .reviews-block .new-review:last-child {
             margin-right: 0; }
+          .product .additional-info .reviews-region .reviews-block .new-review .add-review {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%; }
+            .product .additional-info .reviews-region .reviews-block .new-review .add-review:last-child {
+              margin-right: 0; }
+          .product .additional-info .reviews-region .reviews-block .new-review .review-form {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 40.29137%; }
+            .product .additional-info .reviews-region .reviews-block .new-review .review-form:last-child {
+              margin-right: 0; }
 
 /*# sourceMappingURL=style.css.map */

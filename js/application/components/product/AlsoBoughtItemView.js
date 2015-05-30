@@ -1,7 +1,7 @@
 (function (Backbone) {
     'use strict';
 
-    Backbone.Components.product.AlsoBoughtItem = Backbone.Marionette.ItemView.extend({
+    Backbone.Components.product.AlsoBoughtItemView = Backbone.Marionette.ItemView.extend({
 
         tagName: 'li',
 
