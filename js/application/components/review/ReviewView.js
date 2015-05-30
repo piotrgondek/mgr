@@ -7,12 +7,22 @@
 
         template: false,
 
-        regions: {},
+        regions: {
+            reviews: '.reviews-wrapper'
+        },
 
         behaviors: {
             ReviewFormBehavior: {
                 behaviorClass: Bakcbone.Components.review.ReviewFormBehavior
             }
+        },
+
+        onShow: function () {
+            var c = new Bakcbone.Collection([{}, {}, {}]);
+
+            this.reviews.show(new Bakcbone.Components.review.ReviewsCollectionView({
+                collection: c
+            }));
         }
     });
 })(Backbone);
