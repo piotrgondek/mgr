@@ -51,8 +51,12 @@ module.exports = function (grunt) {
                 tasks: ['uglify:basic']
             },
             app: {
-                files: ['application/**/*.js'],
-                tasks: ['uglify:app', 'uglify:components']
+                files: ['application/*.js', 'application/routers/*.js'],
+                tasks: ['uglify:app']
+            },
+            components: {
+                files: ['application/components/**/*.js'],
+                tasks: ['uglify:components']
             },
             css: {
                 files: ['../css/**/*.scss'],
