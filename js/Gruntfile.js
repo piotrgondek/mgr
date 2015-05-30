@@ -38,6 +38,13 @@ module.exports = function (grunt) {
                 }
             }
         },
+        sass: {
+            dist: {
+                files: {
+                    '../css/style.css': '../css/style.scss'
+                }
+            }
+        },
         watch: {
             basic: {
                 files: ['lib/*.js'],
@@ -46,15 +53,21 @@ module.exports = function (grunt) {
             app: {
                 files: ['application/**/*.js'],
                 tasks: ['uglify:app', 'uglify:components']
+            },
+            css: {
+                files: ['../css/**/*.scss'],
+                tasks: ['sass']
             }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
     grunt.registerTask('default', [
         'uglify',
+        'sass',
         'watch'
     ]);
 };
