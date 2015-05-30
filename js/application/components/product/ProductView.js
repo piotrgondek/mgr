@@ -19,9 +19,9 @@
         },
 
         onShow: function () {
-            var alsoBoughtItemsCollection = new Backbone.Components.product.AlsoBoughtItemsCollection();
+            var alsoBoughtItemsCollection = new Backbone.Components.alsobought.AlsoBoughtItemsCollection();
 
-            this.alsoBought.show(new Backbone.Components.product.AlsoBoughtItemsView({
+            this.alsoBought.show(new Backbone.Components.alsobought.AlsoBoughtItemsView({
                 collection: alsoBoughtItemsCollection
             }));
 

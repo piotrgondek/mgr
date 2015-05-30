@@ -1,7 +1,7 @@
 (function (Backbone) {
     "use strict";
 
-    Backbone.Components.product.AlsoBoughtItemsCollection = Backbone.Collection.extend({
+    Backbone.Components.alsobought.AlsoBoughtItemsCollection = Backbone.Collection.extend({
 
         url: 'data/alsoBought.json'
     });
