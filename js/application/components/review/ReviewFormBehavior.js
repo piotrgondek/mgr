@@ -7,7 +7,8 @@
             content: '.review-content',
             select: '.review-like',
             form: '.review-form',
-            successMsg: '.success'
+            successMsg: '.success',
+            sendBtn: '.send-btn'
         },
 
         events: {
@@ -20,10 +21,11 @@
         submitForm: function (e) {
             e.preventDefault();
             this.ui.successMsg.removeClass('visible');
+            this.ui.sendBtn.hide();
 
             Backbone
                 .ajax({
-                    url: 'data/review/add.php',
+                    url: this.ui.form.attr('action'),
                     method: 'POST',
                     data: {
                         content: this.ui.content.val(),

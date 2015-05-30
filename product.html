@@ -79,14 +79,15 @@
                             <div class="new-review">
                                 <span class="add-review">Add new review</span>
 
-                                <form action="" method="post" class="review-form">
-                                    <textarea name="" placeholder="Your review..." class="review-content"></textarea>
-                                    <select name="" class="review-like">
-                                        <option value="true">I like this item</option>
-                                        <option value="false">I do not like this item</option>
+                                <form action="data/review/add.php" method="post" class="review-form">
+                                    <textarea name="content" placeholder="My review..."
+                                              class="review-content"></textarea>
+                                    <select name="select" class="review-like">
+                                        <option value="like">I like this item</option>
+                                        <option value="dislike">I do not like this item</option>
                                     </select>
-                                    <span class="success">Your comment will be check by moderator. Thank you!</span>
-                                    <input type="submit"/>
+                                    <span class="success">Your comment will be checked by moderator. Thank you!</span>
+                                    <input class="send-btn" type="submit" value="Send my review!"/>
                                 </form>
                             </div>
                         </div>
