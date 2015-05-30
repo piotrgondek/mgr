@@ -3,6 +3,8 @@
 
     Backbone.Components = {
 
+        review: {},
+
         alsobought: {},
 
         gallery: {},

@@ -425,5 +425,19 @@ picture {
             width: 40.29137%; }
             .product .additional-info .reviews-region .reviews-block .new-review .review-form:last-child {
               margin-right: 0; }
+            .product .additional-info .reviews-region .reviews-block .new-review .review-form .success {
+              float: left;
+              display: block;
+              margin-right: 5.85151%;
+              width: 100%;
+              -webkit-transition: height 1s;
+              -moz-transition: height 1s;
+              transition: height 1s;
+              overflow: hidden;
+              height: 0; }
+              .product .additional-info .reviews-region .reviews-block .new-review .review-form .success:last-child {
+                margin-right: 0; }
+              .product .additional-info .reviews-region .reviews-block .new-review .review-form .success.visible {
+                height: 30px; }
 
 /*# sourceMappingURL=style.css.map */

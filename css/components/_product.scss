@@ -80,6 +80,17 @@
 
           .review-form {
             @include span-columns(5 of 12);
+
+            .success {
+              @include span-columns(5 of 5);
+              @include transition(height 1s);
+              overflow: hidden;
+              height: 0;
+
+              &.visible {
+                height: 30px;
+              }
+            }
           }
         }
       }

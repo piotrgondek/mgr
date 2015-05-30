@@ -26,6 +26,8 @@
             }));
 
             alsoBoughtItemsCollection.fetch();
+
+            this.reviews.show(new Backbone.Components.review.ReviewView());
         }
     });
 })(Backbone);
