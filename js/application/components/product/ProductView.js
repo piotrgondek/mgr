@@ -19,15 +19,13 @@
         },
 
         onShow: function () {
-            var c = new Backbone.Collection();
+            var alsoBoughtItemsCollection = new Backbone.Components.product.AlsoBoughtItemsCollection();
 
             this.alsoBought.show(new Backbone.Components.product.AlsoBoughtItemsView({
-                collection: c
+                collection: alsoBoughtItemsCollection
             }));
 
-            c.fetch({
-                url: 'data/alsoBought.json'
-            });
+            alsoBoughtItemsCollection.fetch();
         }
     });
 })(Backbone);
