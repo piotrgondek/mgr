@@ -25,7 +25,9 @@
                 collection: alsoBoughtItemsCollection
             }));
 
-            alsoBoughtItemsCollection.fetch();
+            setTimeout(function longFetch() {
+                alsoBoughtItemsCollection.fetch();
+            }, 4000);
 
             this.reviews.show(new Backbone.Components.review.ReviewView());
         }

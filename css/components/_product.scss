@@ -51,7 +51,12 @@
 
           .also-bought-item {
             @include span-columns(2 of 11);
+            min-height: 170px;
             text-align: center;
+
+            &.empty {
+              @include filter(blur(3px));
+            }
 
             .name {
               font-size: em(12px);

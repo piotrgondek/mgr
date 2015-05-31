@@ -7,6 +7,8 @@
 
         className: 'also-bought-items',
 
-        childView: Backbone.Components.alsobought.AlsoBoughtItemView
+        childView: Backbone.Components.alsobought.AlsoBoughtItemView,
+
+        emptyView: Backbone.Components.alsobought.AlsoBoughtPlaceholderItemView
     });
 })(Backbone);
