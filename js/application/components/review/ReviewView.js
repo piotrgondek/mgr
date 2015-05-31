@@ -18,11 +18,13 @@
         },
 
         onShow: function () {
-            var c = new Bakcbone.Collection([{}, {}, {}]);
+            var reviewsCollection = new Bakcbone.Components.review.ReviewsCollection();
 
             this.reviews.show(new Bakcbone.Components.review.ReviewsCollectionView({
-                collection: c
+                collection: reviewsCollection
             }));
+
+            reviewsCollection.fetch();
         }
     });
 })(Backbone);

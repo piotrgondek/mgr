@@ -86,7 +86,7 @@
                                         <option value="like">I like this item</option>
                                         <option value="dislike">I do not like this item</option>
                                     </select>
-                                    <span class="success">Your comment will be checked by moderator. Thank you!</span>
+                                    <span class="success">Your comment will be checked by moderator.</span>
                                     <input class="send-btn" type="submit" value="Send my review!"/>
                                 </form>
                             </div>
@@ -105,7 +105,8 @@
     <span class="price"><%= price %></span>
 </script>
 <script id="reviewItemTmpl" type="text/html">
-    jest ok :)
+    <span class="content"><%= content %></span>
+    <span class="author">By <%= author %></span>
 </script>
 <script type="text/javascript" src="js/basic.min.js"></script>
 <script type="text/javascript" src="js/app.min.js"></script>
