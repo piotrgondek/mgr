@@ -11,7 +11,8 @@ module.exports = function (grunt) {
                         'lib/jquery.js',
                         'lib/lodash.js',
                         'lib/backbone.js',
-                        'lib/backbone.marionette.js'
+                        'lib/backbone.marionette.js',
+                        'lib/handlebars.js'
                     ]
                 }
             },
@@ -20,6 +21,7 @@ module.exports = function (grunt) {
                     'app.min.js': [
                         [
                             'application/backbone.namespaces.js',
+                            'application/templates.js',
                             'application/RootView.js',
                             'application/routers/*.js',
                             'application/app.js'
@@ -65,16 +67,25 @@ module.exports = function (grunt) {
                 files: ['../../css/**/*.scss'],
                 tasks: ['sass']
             }
+        },
+        handlebars: {
+            compile: {
+                files: {
+                    'application/templates.js': '../templates/**/*.hbs'
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-handlebars');
 
     grunt.registerTask('default', [
         'uglify',
         'sass',
+        'handlebars',
         'watch'
     ]);
 };
