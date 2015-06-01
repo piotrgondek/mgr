@@ -1,4 +1,4 @@
-(function (Backbone) {
+(function (Backbone, templates) {
     'use strict';
 
     Backbone.Components.alsobought.AlsoBoughtPlaceholderItemView = Backbone.Marionette.ItemView.extend({
@@ -7,6 +7,6 @@
 
         className: 'also-bought-item empty',
 
-        template: '#alsoBoughtPlaceholderItemTmpl'
+        template: templates['product/alsobought/placeholder']
     });
-})(Backbone);
+})(Backbone, templates);

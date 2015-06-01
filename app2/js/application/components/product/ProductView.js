@@ -1,11 +1,11 @@
-(function (Backbone) {
+(function (Backbone, templates) {
     'use strict';
 
     Backbone.Components.product.ProductView = Backbone.Marionette.LayoutView.extend({
 
-        el: '.content',
+        className: 'product',
 
-        template: false,
+        template: templates['product'],
 
         behaviors: {
             GalleryBehavior: {
@@ -32,4 +32,4 @@
             this.reviews.show(new Backbone.Components.review.ReviewView());
         }
     });
-})(Backbone);
+})(Backbone, templates);

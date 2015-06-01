@@ -1,0 +1,18 @@
+<h3>Customer Reviews</h3>
+
+<div class="reviews-wrapper"></div>
+
+<div class="new-review">
+    <span class="add-review">Add new review</span>
+
+    <form action="data/review/add.php" method="post" class="review-form">
+                                    <textarea name="content" placeholder="My review..."
+                                              class="review-content"></textarea>
+        <select name="select" class="review-like">
+            <option value="like">I like this item</option>
+            <option value="dislike">I do not like this item</option>
+        </select>
+        <span class="success">Your comment will be checked by moderator.</span>
+        <input class="send-btn" type="submit" value="Send my review!"/>
+    </form>
+</div>

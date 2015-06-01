@@ -1,8 +1,10 @@
-(function (Backbone) {
+(function (Backbone, templates) {
     'use strict';
 
     Backbone.RootView = Backbone.Marionette.LayoutView.extend({
 
-        el: 'body'
+        el: '.main-container',
+
+        template: templates['rootView']
     });
-})(Backbone);
+})(Backbone, templates);

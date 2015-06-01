@@ -1,10 +1,10 @@
-(function(Backbone){
+(function(Backbone, templates){
     'use strict';
 
     Backbone.Components.review.ReviewItemView = Backbone.Marionette.ItemView.extend({
 
         tagName: 'li',
 
-        template: '#reviewItemTmpl'
+        template: templates['product/review/item']
     });
-})(Backbone);
+})(Backbone, templates);

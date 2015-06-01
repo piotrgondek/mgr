@@ -77,6 +77,10 @@ module.exports = function (grunt) {
                 namespace: 'templates',
                 processName: function (filePath) {
                     return filePath.replace('../templates/', '').replace('.hbs', '')
+                },
+                partialsUseNamespace: true,
+                processPartialName: function(filePath) { // input:  templates/_header.hbs
+                    return filePath.replace('../templates/', '').replace('.hbs', '')
                 }
             },
             compile: {

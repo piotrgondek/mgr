@@ -1,11 +1,11 @@
-(function (Bakcbone) {
+(function (Bakcbone, templates) {
     'use strict';
 
     Backbone.Components.review.ReviewView = Bakcbone.Marionette.LayoutView.extend({
 
-        el: '.reviews-block',
+        className: 'reviews-block',
 
-        template: false,
+        template: templates['reviews'],
 
         regions: {
             reviews: '.reviews-wrapper'
@@ -27,4 +27,4 @@
             reviewsCollection.fetch();
         }
     });
-})(Backbone);
+})(Backbone, templates);
