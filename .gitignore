@@ -1,11 +1,11 @@
 # Created by .ignore support plugin (hsz.mobi)
 
-js/basic.min.js
-js/basic.min.js.map
-js/app.min.js.map
-js/components.min.js
-js/app.min.js
-js/components.min.js.map
-css/style.css.map
-css/style.css
-js/.sass-cache
+app1/js/.sass-cache
+app1/js/basic.min.js
+app1/js/app.min.js
+app1/js/app.min.js.map
+app1/js/components.min.js
+app1/js/components.min.js.map
+app1/js/basic.min.js.map
+app1/css/style.css.map
+app1/css/style.css
