@@ -44,7 +44,7 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 files: {
-                    '../css/style.css': '../css/style.scss'
+                    '../css/style.css': '../../css/style.scss'
                 }
             }
         },
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
                 tasks: ['uglify:components']
             },
             css: {
-                files: ['../css/**/*.scss'],
+                files: ['../../css/**/*.scss'],
                 tasks: ['sass']
             }
         }
