@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteBase /~piotrgondek/mgr/app1
+
+RewriteRule ^js/(.*)$ jsDispatcher.php?file=js/$1
