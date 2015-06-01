@@ -66,9 +66,19 @@ module.exports = function (grunt) {
             css: {
                 files: ['../../css/**/*.scss'],
                 tasks: ['sass']
+            },
+            templates: {
+                files: ['../templates/**/*.hbs'],
+                tasks: ['handlebars']
             }
         },
         handlebars: {
+            options: {
+                namespace: 'templates',
+                processName: function (filePath) {
+                    return filePath.replace('../templates/', '').replace('.hbs', '')
+                }
+            },
             compile: {
                 files: {
                     'application/templates.js': '../templates/**/*.hbs'
