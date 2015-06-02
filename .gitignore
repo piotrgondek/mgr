@@ -15,3 +15,5 @@ app2/js/basic.min.js.map
 app2/js/app.min.js.map
 app2/js/.sass-cache
 app2/js/application/templates.js
+app1/js/node_modules
+app2/js/node_modules
