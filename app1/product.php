@@ -19,26 +19,26 @@
             <div class="product">
                 <div class="img-container">
                     <div class="img-thumbnail">
-                        <a href="#">
+                        <a href="?image=sigma01.jpg">
                             <img src="img/product/sigma01.jpg"/>
                         </a>
-                        <a href="#">
+                        <a href="?image=sigma02.jpg">
                             <img src="img/product/sigma02.jpg"/>
                         </a>
-                        <a href="#">
+                        <a href="?image=sigma03.jpg">
                             <img src="img/product/sigma03.jpg"/>
                         </a>
-                        <a href="#">
+                        <a href="?image=sigma04.jpg">
                             <img src="img/product/sigma04.jpg"/>
                         </a>
-                        <a href="#">
+                        <a href="?image=sigma05.jpg">
                             <img src="img/product/sigma05.jpg"/>
                         </a>
-                        <a href="#">
+                        <a href="?image=sigma06.jpg">
                             <img src="img/product/sigma06.jpg"/>
                         </a>
                     </div>
-                    <img class="full-img" src="img/product/sigma01.jpg"/>
+                    <img class="full-img" src="img/product/<?php echo $_GET['image'] ? $_GET['image'] : 'sigma01.jpg' ?>"/>
                 </div>
                 <div class="product-description">
                     <h1>Sigma 210306 18-35mm F1.8 DC HSM Lens for Nikon APS-C DSLRs (Black)</h1>

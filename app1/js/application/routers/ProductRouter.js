@@ -4,7 +4,7 @@
     Backbone.Routers.ProductRouter = Backbone.Marionette.AppRouter.extend({
 
         routes: {
-            'product.html': 'initProductPage'
+            'product.php': 'initProductPage'
         },
 
         initProductPage: function () {
