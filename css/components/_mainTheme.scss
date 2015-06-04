@@ -7,4 +7,36 @@
   .footer {
     @include span-columns(12);
   }
+
+  .loading {
+    @include animation(loading-bar 3s);
+    @include outer-container(200px);
+    margin-top: 30px;
+    height: 25px;
+    box-sizing: border-box;
+    border-left: {
+      color: #ff9843;
+      style: solid;
+      width: 200px;
+    }
+    box-shadow: 3px 3px 4px 2px #888888;
+
+    @include keyframes(loading-bar) {
+      0% {
+        border-left-width: 1px;
+      }
+      10% {
+        border-left-width: 100px;
+      }
+      70% {
+        border-left-width: 110px;
+      }
+      90% {
+        border-left-width: 190px;
+      }
+      100% {
+        border-left-width: 200px;
+      }
+    }
+  }
 }
