@@ -4,17 +4,28 @@
     Backbone.Routers.ProductRouter = Backbone.Marionette.AppRouter.extend({
 
         routes: {
-            'product.html': 'initProductPage'
+            '(:picture)': 'initProductPage'
         },
 
-        initProductPage: function () {
+        initProductPage: function (picture) {
+            var productModel;
             var rootView = window.App.rootView;
 
             rootView.addRegions({
                 product: '.content-container'
             });
 
-            rootView.product.show(new Backbone.Components.product.ProductView());
+            if (picture) {
+                productModel = new Backbone.Components.product.ProductModel({
+                    defaultPicture: picture
+                });
+            } else {
+                productModel = new Backbone.Components.product.ProductModel();
+            }
+
+            rootView.product.show(new Backbone.Components.product.ProductView({
+                model: productModel
+            }));
         }
     });
 })(Backbone, window);

@@ -12,7 +12,6 @@
         window.App.rootView.render();
 
         Backbone.history.start({
-            pushState: true,
             root: '~piotrgondek/mgr/app2'
         });
 
