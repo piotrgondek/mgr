@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -65,13 +64,7 @@
                         <h3>Customers Who Bought This Item Also Bought</h3>
 
                         <div class="also-bought-region">
-                            <ul class="also-bought-items">
-                                <li class="also-bought-item empty">
-                                    <img class="image" src="img/alsobought/alsoBought01.jpg">
-                                    <h4 class="name">Sigma 878306 USB Dock Lens Firmware for Nikon Mount Lenses (Black)</h4>
-                                    <span class="price">$59.00</span>
-                                </li>
-                            </ul>
+                            <ul class="also-bought-items"></ul>
                         </div>
                     </div>
 
@@ -86,7 +79,7 @@
                             <div class="new-review">
                                 <span class="add-review">Add new review</span>
 
-                                <form action="data/review/add.php" method="post" class="review-form <?php echo $_SESSION['reviewAdded'] ? 'visible-from-server' : '' ?>">
+                                <form action="data/review/add.php" method="post" class="review-form">
                                     <textarea name="content" placeholder="My review..."
                                               class="review-content"></textarea>
                                     <select name="select" class="review-like">

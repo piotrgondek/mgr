@@ -42,6 +42,18 @@
             height: 30px;
           }
         }
+
+        &.visible-from-server {
+
+          .success {
+            @include transition(none);
+            height: 30px;
+          }
+
+          .send-btn {
+            display: none;
+          }
+        }
       }
     }
   }
