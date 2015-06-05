@@ -5,6 +5,10 @@
 
         el: '.main-container',
 
-        template: templates['rootView']
+        template: templates['rootView'],
+
+        regions: {
+            content: '.content-container'
+        }
     });
 })(Backbone, templates);

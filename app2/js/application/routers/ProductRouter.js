@@ -11,10 +11,6 @@
             var productModel;
             var rootView = window.App.rootView;
 
-            rootView.addRegions({
-                product: '.content-container'
-            });
-
             if (picture) {
                 productModel = new Backbone.Components.product.ProductModel({
                     defaultPicture: picture
@@ -23,7 +19,7 @@
                 productModel = new Backbone.Components.product.ProductModel();
             }
 
-            rootView.product.show(new Backbone.Components.product.ProductView({
+            rootView.content.show(new Backbone.Components.product.ProductView({
                 model: productModel
             }));
         }
