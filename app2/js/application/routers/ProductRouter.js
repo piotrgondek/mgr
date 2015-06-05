@@ -8,7 +8,6 @@
         },
 
         initProductPage: function (picture) {
-            var productModel;
             var rootView = window.App.rootView;
             var modelData = {};
 
