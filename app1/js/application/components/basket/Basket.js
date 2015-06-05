@@ -13,8 +13,7 @@
         },
 
         addToBasket: function (data) {
-            this
-                .sync('create', this, data)
+            Backbone.ajax(data)
                 .done(function (data) {
                     this.set(this.parse(data));
                 }.bind(this));
