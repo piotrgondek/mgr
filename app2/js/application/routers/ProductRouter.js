@@ -10,17 +10,14 @@
         initProductPage: function (picture) {
             var productModel;
             var rootView = window.App.rootView;
+            var modelData = {};
 
             if (picture) {
-                productModel = new Backbone.Components.product.ProductModel({
-                    defaultPicture: picture
-                });
-            } else {
-                productModel = new Backbone.Components.product.ProductModel();
+                modelData.defaultPicture = picture;
             }
 
             rootView.content.show(new Backbone.Components.product.ProductView({
-                model: productModel
+                model: new Backbone.Components.product.ProductModel(modelData)
             }));
         }
     });
