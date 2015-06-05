@@ -14,6 +14,7 @@
                 product: '.content-container'
             });
 
+            rootView.header.show(new Backbone.Components.header.HeaderView());
             rootView.product.show(new Backbone.Components.product.ProductView());
         }
     });

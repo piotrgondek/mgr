@@ -16,6 +16,16 @@
     @include span-columns(10 of 12);
     @include omega();
     height: 100px;
+
+    .search-item {
+      @include span-columns(7 of 10);
+      @include shift(1);
+      @include transform(translateY(8px));
+    }
+
+    .search-btn {
+      @include span-columns(2 of 10);
+    }
   }
 
   .important-links {
@@ -27,5 +37,14 @@
     @include span-columns(3 of 12);
     @include omega();
     height: 100px;
+
+    .amount {
+      @include span-columns(1 of 3);
+      text-align: right;
+    }
+
+    .quantity {
+      @include span-columns(1 of 3);
+    }
   }
 }

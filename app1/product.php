@@ -1,4 +1,12 @@
-<?php session_start(); ?>
+<?php
+    session_start();
+
+    if(empty($_SESSION['basket'])) {
+        $_SESSION['basket']['id'] = md5('myBasket');
+        $_SESSION['basket']['amount'] = 0;
+        $_SESSION['basket']['quantity'] = 0;
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -8,11 +16,19 @@
 </head>
 <body>
 <div class="main-container">
-    <div class="header">
-        <div class="logo"></div>
-        <div class="search"></div>
-        <div class="important-links"></div>
-        <div class="trolley"></div>
+    <div class="header-container">
+        <div class="header">
+            <div class="logo"></div>
+            <div class="search">
+                <input class="search-item" name="search"/>
+                <input class="search-btn" type="submit" value="Search"/>
+            </div>
+            <div class="important-links"></div>
+            <div class="trolley">
+                <div class="amount">$<?php echo $_SESSION['basket']['amount']; ?></div>
+                <div class="quantity"><?php echo $_SESSION['basket']['quantity']; ?> items</div>
+            </div>
+        </div>
     </div>
     <div class="content-container">
         <div class="content">
@@ -59,7 +75,13 @@
                         <li>Available in Canon EF (EF-S), Sony Alpha (DT), Nikon F (DX) mounts</li>
                     </ul>
                 </div>
-                <div class="action-buttons"></div>
+                <div class="action-buttons">
+                    <form action="data/basket/add.php" method="post" class="product-actions">
+                        <input type="hidden" name="basket_id" value="<?php echo $_SESSION['basket']['id'];?>"/>
+                        <input type="hidden" class="price" name="price" value="799"/>
+                        <input type="submit" value="Add to basket"/>
+                    </form>
+                </div>
                 <div class="additional-info">
                     <div class="also-bought-block">
                         <h3>Customers Who Bought This Item Also Bought</h3>

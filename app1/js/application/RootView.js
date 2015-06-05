@@ -3,6 +3,10 @@
 
     Backbone.RootView = Backbone.Marionette.LayoutView.extend({
 
-        el: 'body'
+        el: 'body',
+
+        regions: {
+            header: '.header-container'
+        }
     });
 })(Backbone);

@@ -3,6 +3,8 @@
 
     Backbone.Components = {
 
+        header: {},
+
         review: {},
 
         alsobought: {},

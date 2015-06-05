@@ -10,6 +10,9 @@
         behaviors: {
             GalleryBehavior: {
                 behaviorClass: Backbone.Components.gallery.GalleryBehavior
+            },
+            ProductActionsBehavior: {
+                behaviorClass: Backbone.Components.product.ProductActionsBehavior
             }
         },
 
