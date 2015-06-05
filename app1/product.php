@@ -3,7 +3,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>App 1: common way</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
