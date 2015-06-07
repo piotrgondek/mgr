@@ -8,7 +8,12 @@
         template: templates['rootView'],
 
         regions: {
-            content: '.content-container'
+            content: '.content-container',
+            header: '.header-container'
+        },
+
+        onRender: function () {
+            this.header.show(new Backbone.Components.header.HeaderView());
         }
     });
 })(Backbone, templates);

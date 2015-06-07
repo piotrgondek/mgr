@@ -32,6 +32,8 @@ module.exports = function (grunt) {
             components: {
                 files: {
                     'components.min.js': [
+                        'application/components/basket/*.js',
+                        'application/components/header/*.js',
                         'application/components/gallery/*.js',
                         'application/components/alsobought/AlsoBoughtItemsCollection.js',
                         'application/components/alsobought/AlsoBoughtPlaceholderItemView.js',
