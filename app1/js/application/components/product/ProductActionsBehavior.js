@@ -22,6 +22,7 @@
             e.preventDefault();
             this.basket.addToBasket({
                 url: this.ui.form.attr('action'),
+                method: this.ui.form.attr('method'),
                 data: this.ui.form.serialize()
             });
         }
