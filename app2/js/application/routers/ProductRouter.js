@@ -8,16 +8,13 @@
         },
 
         initProductPage: function (picture) {
-            var rootView = window.App.rootView;
             var modelData = {};
 
             if (picture) {
                 modelData.defaultPicture = picture;
             }
 
-            rootView.content.show(new Backbone.Components.product.ProductView({
-                model: new Backbone.Components.product.ProductModel(modelData)
-            }));
+            window.App.module('product').start(modelData);
         }
     });
 })(Backbone, window);

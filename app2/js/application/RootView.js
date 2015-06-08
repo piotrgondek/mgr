@@ -10,10 +10,6 @@
         regions: {
             content: '.content-container',
             header: '.header-container'
-        },
-
-        onRender: function () {
-            this.header.show(new Backbone.Components.header.HeaderView());
         }
     });
 })(Backbone, templates);

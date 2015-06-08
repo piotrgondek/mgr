@@ -18,18 +18,16 @@
             reviews: '.reviews-region'
         },
 
-        onShow: function () {
-            var alsoBoughtItemsCollection = new Backbone.Components.alsobought.AlsoBoughtItemsCollection();
+        ui: {
+            addBtn: '.action-buttons .add-button'
+        },
 
-            this.alsoBought.show(new Backbone.Components.alsobought.AlsoBoughtItemsView({
-                collection: alsoBoughtItemsCollection
-            }));
+        events: {
+            'click @ui.addBtn': 'addProduct'
+        },
 
-            setTimeout(function longFetch() {
-                alsoBoughtItemsCollection.fetch();
-            }, 4000);
-
-            this.reviews.show(new Backbone.Components.review.ReviewView());
+        addProduct: function () {
+            this.model.addProduct();
         }
     });
 })(Backbone, templates);

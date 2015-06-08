@@ -32,7 +32,6 @@ module.exports = function (grunt) {
             components: {
                 files: {
                     'components.min.js': [
-                        'application/components/basket/*.js',
                         'application/components/header/*.js',
                         'application/components/gallery/*.js',
                         'application/components/alsobought/AlsoBoughtItemsCollection.js',
@@ -41,6 +40,13 @@ module.exports = function (grunt) {
                         'application/components/alsobought/AlsoBoughtItemsView.js',
                         'application/components/review/*.js',
                         'application/components/product/*.js'
+                    ]
+                }
+            },
+            modules: {
+                files: {
+                    'modules.min.js': [
+                        'application/modules/*.js'
                     ]
                 }
             }
@@ -64,6 +70,10 @@ module.exports = function (grunt) {
             components: {
                 files: ['application/components/**/*.js'],
                 tasks: ['uglify:components']
+            },
+            modules: {
+                files: ['application/modules/*.js'],
+                tasks: ['uglify:modules']
             },
             css: {
                 files: ['../../css/**/*.scss'],

@@ -7,9 +7,9 @@
     new Backbone.Routers.ProductRouter();
 
     Backbone.$(function () {
-        window.App.start();
-
         window.App.rootView.render();
+
+        window.App.start();
 
         Backbone.history.start({
             root: '~piotrgondek/mgr/app2'
